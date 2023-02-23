@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop it</title>
+    <!-- LINKED TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- LINKED FONT AWSOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="bg-purple-100 py-5 px-5 md:px-0 shadow-lg">
+      <nav class="flex items-center justify-between md:px-12">
+        <h1 class="text-3xl font-bold font-popins">ShoPiT</h1>
+        <ul
+          class="font-bold md:flex md:items-center justify-between absolute md:static top-[-400px] hidden md:py-0 py-5 md:flex-row gap-10 flex-col bg-green-100 w-full left-0 pl-5 md:pl-0 md:bg-transparent md:w-auto z-[-1] md:z-auto ">
+          <div class="md:flex">
+            <li class="md:mx-3 md:my-0 my-5"><a href="#">HOME</a></li>
+            <li class="md:mx-3 md:my-0 my-5"><a href="#">SHOP</a></li>
+            <li class="md:mx-3 md:my-0 my-5"><a href="#">ABOUT</a></li>
+            <li class="md:mx-3 md:my-0 my-5"><a href="#">CONTACT</a></li>
+          </div>
+          <div>
+            <button class="bg-black px-5 py-1 text-white">LOG IN</button>
+            <button class="bg-black px-5 py-1 text-white">SIGN UP</button>
+          </div>
+        </ul>
+        <!-- TOGGLE BUTTON ICON -->
+        <button class="md:hidden" onclick="toggleNav(this)"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+    </header>
+    
+    <!-- JAVASCRIPT -->
+    <script>
+      const lists = document.querySelector("ul")
+      function toggleNav (e) {
+        e.appendChild = icon;
+        lists.classList.add("opacity-100")
+        lists.classList.toggle("hidden")
+        lists.classList.toggle("top-[79px]")
+      }
+       
+    </script>
+  </body>
+</html>
